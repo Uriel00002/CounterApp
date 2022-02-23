@@ -1,9 +1,8 @@
 import React from 'react';
 
-const PrimeraApp = () => {
+const PrimeraApp = ( {saludo = 'Hola Mundo'} ) => {
 
-    const saludo = 'Hola mundo';
-
+ 
     return (
         <>
             <h1> {saludo} </h1>
