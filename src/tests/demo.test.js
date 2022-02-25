@@ -1,10 +1,16 @@
 
-test ( 'debe ser true', () => {
 
-    const isActive = true;
+describe('Pruebas en el archivo demo.test.js', () =>{
 
-    if (isActive){
-        throw new Error('No esta activo');
-    }
+
+    test ( 'Deben ser iguales los Strings', () => {
+
+        const mensaje = 'Hola mundo';
+
+        const mensaje2 = "Hola mundo";
+
+        expect ( mensaje ).toBe (mensaje2 );
+
+    })
 
 })
